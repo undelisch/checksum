@@ -30,14 +30,14 @@ fi
 ## File checks
 # Check if the SHA file exists
 if [ ! -e "$filesum" ]; then
-    echo "404: Specified SHA file ($filesum) not found."
-    exit 1
+	echo "404: Specified SHA file ($filesum) not found."
+	exit 1
 fi
 
 # Check if the ISO file exists
 if [ ! -e "$fileiso" ]; then
-    echo "404: Specified ISO file ($fileiso) not found."
-    exit 1
+	echo "404: Specified ISO file ($fileiso) not found."
+	exit 1
 fi
 
 ## Fetch checksums
@@ -49,7 +49,7 @@ sum2=$(sha$1sum $fileiso | awk '{print $1}')
 
 ## Compare checksums
 if [ "$sum1" = "$sum2" ]; then
-    echo "Checksums are equal."
+	echo "Checksums are equal."
 else 
 	echo "Checksums are not equal."
 fi
