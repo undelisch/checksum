@@ -13,7 +13,7 @@ Checksum type (either 256-bit or 512-bit), checksum file filename and ios filena
 
 Use the script (executable) as follows in your working directory: 
 
-./checksum.sh <sumtype> <isofile> <checksumfile>
+./checksum.sh [sumtype] [isofile] [checksumfile]
 
 Example:
 
